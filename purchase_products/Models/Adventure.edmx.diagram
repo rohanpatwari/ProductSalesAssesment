@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cf9a5ea0cccb4d619b64513b6216f811" Name="Diagram1">
+        <EntityTypeShape EntityType="AdventureWorks2012Model.Address" Width="1.5" PointX="3.125" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.Product" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.ShipMethod" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.Customer" Width="1.5" PointX="0.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.SalesOrderDetail" Width="1.5" PointX="8" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.SalesOrderHeader" Width="1.5" PointX="5.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.SpecialOfferProduct" Width="1.5" PointX="6.5" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_SalesOrderHeader_Address_BillToAddressID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_SalesOrderHeader_Address_ShipToAddressID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_SpecialOfferProduct_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_SalesOrderHeader_ShipMethod_ShipMethodID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_SalesOrderHeader_Customer_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
